@@ -7,8 +7,7 @@ class StoriesBloc{
   final _topIds = PublishSubject<List<int>>();
 
   //getter to streams
-
-  Observable<List<int>> get topids => _topIds.stream;
+  Observable<List<int>> get topIds => _topIds.stream;
 
   fetchTopIds() async{
     final ids = await _repository.fetchTopIds();

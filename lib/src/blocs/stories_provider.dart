@@ -1,6 +1,13 @@
 import 'package:flutter/material.dart';
 import 'stories_bloc.dart';
 
+/*
+export 'stories_bloc.dart' means
+anyone who imports the stories provider file is going to get access to both the
+stories provider and stories bloc
+ */
+export 'stories_bloc.dart';
+
 class StoriesProvider extends InheritedWidget {
   final StoriesBloc bloc;
   StoriesProvider({Key key, Widget child})
